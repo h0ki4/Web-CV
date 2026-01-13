@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.input__box {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#register__paragraph {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 50px;
+}
+.input__box input {
+  margin: 12px 0;
+  width: 500px;
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  text-align: center;
+  outline: none;
+  color: #333333;
+}
+.input__box input:hover {
+  border-color: darkslategrey;
+  transition: 0.5s;
+}
+.input__box::placeholder {
+  color: #999999;
+}
+.button {
+  display: block;
+  margin: 20px auto 0 auto;
+  height: 55px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  text-align: center;
+  outline: none;
+  background-color: white;
+  color: #999999;
+  font-size: 20px;
+}
+
+.button:hover {
+  border-color: darkslategrey;
+  transition: 0.5s;
+}
+button:disabled {
+  background-color: #999; /* серый цвет */
+  cursor: not-allowed;
+}

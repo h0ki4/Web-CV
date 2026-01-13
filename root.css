@@ -1,0 +1,15 @@
+:root {
+  scroll-behavior: smooth;
+  --text-color: #2b2b3b;
+  --link-color: gray;
+  --hover-color: dimgray;
+
+  --web-padding: 0 300px;
+}
+
+body {
+  background-color: aliceblue; /* тёмный базовый фон */
+  position: relative;
+  overflow: auto;
+  color: var(--text-color);
+}

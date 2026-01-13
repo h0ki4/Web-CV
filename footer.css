@@ -1,0 +1,34 @@
+.footer_ {
+  display: flex;
+  height: 200px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: lightgrey;
+
+  .footer__numer {
+    padding-left: 30px;
+    font-size: 20px;
+  }
+
+  .footer__telegram {
+    padding-right: 30px;
+    font-size: 20px;
+  }
+  .footer__linkedIn {
+    padding-right: 30px;
+  }
+
+  a {
+    text-decoration: none; /* убирает подчёркивание */
+    cursor: pointer; /* добавляет привычный курсор */
+    display: inline-block; /* теперь можно точно управлять высотой */
+    color: var(--link-color);
+    line-height: normal;
+    vertical-align: middle;
+    font-size: 20px;
+    position: relative;
+    &:hover {
+      color: var(--hover-color);
+    }
+  }
+}
