@@ -1,5 +1,21 @@
 {
+  "name": "web-cv",
+  "version": "1.0.0",
+  "description": "Мой проект на Vite для GitHub Pages",
+  "homepage": "https://h0ki4.github.io/Web-CV",
   "dependencies": {
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "vite": "^4.4.9"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "sass": "^1.97.2"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   }
 }

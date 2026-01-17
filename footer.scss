@@ -1,0 +1,54 @@
+.footer_ {
+  display: flex;
+  height: 200px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: lightgrey;
+  max-width: 100%;
+
+  .footer__numer {
+    margin-left: 30px;
+    font-size: 20px;
+  }
+
+  .footer__telegram {
+    // margin-right: 30px;
+    font-size: 20px;
+  }
+  .footer__linkedIn {
+    margin-right: 30px;
+  }
+
+  a {
+    text-decoration: none; /* убирает подчёркивание */
+    cursor: pointer; /* добавляет привычный курсор */
+    display: inline-block; /* теперь можно точно управлять высотой */
+    color: var(--link-color);
+    line-height: normal;
+    vertical-align: middle;
+    font-size: 20px;
+    position: relative;
+    &:hover {
+      color: var(--hover-color);
+    }
+  }
+}
+
+// * {
+//   outline: 1px solid red;
+// }
+
+@media (max-width: 500px) {
+  .footer_ {
+    flex-direction: column;
+    margin: 0;
+    padding: 20px 0;
+    height: auto;
+    .footer__numer,
+    .footer__telegram,
+    .footer__linkedIn,
+    .footer__mail {
+      margin: 0;
+    }
+  }
+}

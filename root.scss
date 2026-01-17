@@ -1,0 +1,27 @@
+:root {
+  scroll-behavior: smooth;
+  --text-color: #2b2b3b;
+  --link-color: gray;
+  --hover-color: dimgray;
+  @media (max-width: 768px) {
+    --font-size-base: 18px;
+  }
+}
+body {
+  background-color: aliceblue; /* тёмный базовый фон */
+  position: relative;
+  overflow: auto;
+  color: var(--text-color);
+  width: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+main {
+  width: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
