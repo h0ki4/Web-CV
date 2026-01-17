@@ -100,6 +100,11 @@
     padding: 30px 100px 0 100px;
   }
 }
+.all__in__footer {
+  .section__title2 {
+    padding: 30px 100px 30px 100px;
+  }
+}
 @media (max-width: 300px) {
   a {
     display: none;
@@ -135,9 +140,6 @@
 }
 .all__in__footer {
   text-align: center;
-  // .section__title2 {
-  //   font-size: 24px;
-  // }
 }
 @media (max-width: 1200px) {
   .about {
@@ -171,7 +173,7 @@
 }
 @media (max-width: 375px) {
   .all__in__footer {
-    padding: 50px 0 50px 0;
+    padding: 20px 0 20px 0;
     .section__title2 {
       font-size: 12px;
       padding: 0 10px;
