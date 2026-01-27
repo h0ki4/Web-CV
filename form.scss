@@ -31,7 +31,7 @@
   transition: 0.5s;
 }
 .input__box::placeholder {
-  color: #999999;
+  color: var(--button-color);
 }
 .button {
   display: block;
@@ -42,8 +42,8 @@
   border-radius: 15px;
   text-align: center;
   outline: none;
-  background-color: white;
-  color: #999999;
+  background-color: var(--white-color);
+  color: var(--button-color);
   font-size: 20px;
 }
 

@@ -7,30 +7,25 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: white; /* или другой фон, чтобы текст был читаем */
+  background: var(--white-color); /* или другой фон, чтобы текст был читаем */
   margin: 0; /* margin убираем, т.к. position: fixed */
   min-height: 150px;
   padding: 0 100px;
+  transition: background-color 0.8s ease, color 0.8s ease;
   .header__left {
     font-size: 25px;
     text-decoration: none;
     display: inline-block;
     vertical-align: top;
     font-weight: bold;
-
-    a {
-      text-decoration: none; /* убирает подчёркивание */
-      cursor: pointer; /* добавляет привычный курсор */
-      display: inline-block; /* теперь можно точно управлять высотой */
-      color: var(--link-color);
-      line-height: normal;
-      vertical-align: middle;
-      position: relative;
-      top: -3px;
-      font-family: normal;
-      &:hover {
-        color: var(--hover-color);
-      }
+    .button {
+      border: none;
+      margin: 0 auto;
+      padding: 0;
+      width: 0;
+      font-size: 30px;
+      color: var(--button-color);
+      transition: transform 0.3s, color 0.3s;
     }
   }
   .header__center {
@@ -105,14 +100,10 @@
     padding: 30px 100px 30px 100px;
   }
 }
-@media (max-width: 300px) {
-  a {
-    display: none;
-  }
-}
+
 @media (max-width: 500px) {
   .header {
-    justify-content: center;
+    justify-content: space-between;
     .header__right {
       .img__logo {
         display: relative;
@@ -126,11 +117,6 @@
     .header__center {
       display: none;
     }
-    .header__left {
-      a {
-        display: none;
-      }
-    }
   }
 }
 @media (max-width: 768px) {
@@ -140,11 +126,6 @@
 }
 .all__in__footer {
   text-align: center;
-}
-@media (max-width: 1200px) {
-  .about {
-    // padding: 0 100px;
-  }
 }
 @media (max-width: 768px) {
   .about {

@@ -3,18 +3,31 @@
   --text-color: #2b2b3b;
   --link-color: gray;
   --hover-color: dimgray;
+  --white-color: white;
+  --background-color: aliceblue;
+  --button-color: #999999;
   @media (max-width: 768px) {
     --font-size-base: 18px;
   }
 }
+.darkstyle {
+  --text-color: #e6e6eb;
+  --link-color: #b0b0c0;
+  --hover-color: #ffffff;
+  --white-color: #1a1a24;
+  --background-color: #121218;
+  --button-color: #3a3a4a;
+}
+
 body {
-  background-color: aliceblue; /* тёмный базовый фон */
+  background-color: var(--background-color); /* тёмный базовый фон */
   position: relative;
   overflow: auto;
   color: var(--text-color);
   width: 100%;
   margin: 0;
   overflow-x: hidden;
+  transition: background-color 0.8s ease, color 0.8s ease;
 }
 main {
   width: 100%;
